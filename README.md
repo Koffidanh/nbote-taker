@@ -2,7 +2,7 @@
   # Note Taker
   ![badge](https://img.shields.io/badge/License-MIT-brightgreen)
  ## The Repository
- This 'Note Taker' was created to generate to help the user to organism his /her daily life or work. 
+ This 'Note Taker' was created to generate to help the user to organism his /her daily life or work. [Note Taker](https://limitless-hamlet-20887.herokuapp.com/)
 
    ## Table of Contents
    ### * [Installation](#installation)
