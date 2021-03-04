@@ -28,7 +28,7 @@
   No Test required. 
 ## Video demo
 Here is the demo video.
-![demo](https://github.com/Koffidanh/note-taker/blob/main/images/demo.gif)
+![demo](https://github.com/Koffidanh/note-taker/blob/main/assets/images/demo.gif)
  ## License
  Licensed under the MIT.
   
