@@ -12,8 +12,8 @@ module.exports = (app) => {
     console.log(pastNotes)
     var note = req.body
     console.log(note)
-    note.id = generateUUId()
-   return res.json(JSON.parse(pastNotes))
+    //note.id = generateUUId()
+    res.json(JSON.parse(pastNotes))
    
 
   })
@@ -27,26 +27,27 @@ module.exports = (app) => {
     var note = req.body
     console.log(note)
     note.id = generateUUId()
-    //res.json(pastNotes)
-    //const noteTitle = req.body.title;
-    //const noteText = req.body.text;
+    res.json(pastNotes)
+    const noteTitle = req.body.title;
+    const noteText = req.body.text;
    
     pastNotes.push(note) 
     // appendFile() to db.json
-    fs.writeFileSync('db.json',JSON.stringify(pastNotes), (err) =>
+    fs.writeFileSync('./db/db.json',JSON.stringify(pastNotes), (err) =>
 
       err ? console.error(err) : console.log('Commit logged!')
     );
 
-    //res.json(pastNotes)
-    //res.json(JSON.stringify(pastNotes))
-    return res.json(JSON.parse(pastNotes))
     
-   //res.redirect(`/notes?id=${note.Id}&title=${note.title}&text=${note.text}`)
+  
+   
+    
+  //res.redirect(`/notes?id=${note.Id}&title=${pastNotes.title}&text=${pastNotes.text}`)
     
   });
   //
   // app.get('/api/notes/:node.id', (req, res) => {
   //   res.json(NewPastNotes[req.params.note.id])
   // })
+ 
 };
