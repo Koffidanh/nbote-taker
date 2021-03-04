@@ -39,15 +39,18 @@ module.exports = (app) => {
     );
 
     
-  
-   
-    
-  //res.redirect(`/notes?id=${note.Id}&title=${pastNotes.title}&text=${pastNotes.text}`)
     
   });
-  //
-  // app.get('/api/notes/:node.id', (req, res) => {
-  //   res.json(NewPastNotes[req.params.note.id])
+  //Delete post
+  // app.delete('/api/note/:id', (req, res) => {
+  //   let removeNoteId = JSOn.parse(req.params.pastNotes.id) 
+  //   console.log(removeNoteId)
+  //   removeNote = pastNotes.find({id})
+  //  pastNotes.splice(pastNotes.indexOf(removeNote),1)
+  //  fs.writeFileSync('./db/db.json',JSON.stringify(pastNotes), (err) =>
+
+  //     err ? console.error(err) : console.log('Commit logged!')
+  //   );
   // })
  
 };
